@@ -26,7 +26,7 @@ with DAG(
     'lab5', 
     default_args=default_args, 
     schedule_interval=None, 
-    start_date=datetime(2024, 11, 28),
+    schedule_interval='@daily', 
     catchup=False,
     tags=['labs']
 ) as dag: # Define the DAG
